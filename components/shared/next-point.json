@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_next_points",
+  "info": {
+    "name": "nextPoint",
+    "icon": "map-marker-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "point": {
+      "model": "point"
+    },
+    "time": {
+      "type": "time"
+    },
+    "farba": {
+      "type": "enumeration",
+      "enum": [
+        "red",
+        "blue",
+        "green",
+        "yellow"
+      ]
+    }
+  }
+}

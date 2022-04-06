@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_peaks",
+  "info": {
+    "name": "peak",
+    "icon": "mountain",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "altitude": {
+      "type": "biginteger"
+    }
+  }
+}

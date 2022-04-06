@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_route_paths",
+  "info": {
+    "name": "route_path",
+    "icon": "globe-africa",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "point": {
+      "model": "point"
+    },
+    "time": {
+      "type": "time"
+    },
+    "farba": {
+      "type": "enumeration",
+      "enum": [
+        "red",
+        "blue",
+        "green",
+        "yellow"
+      ]
+    }
+  }
+}

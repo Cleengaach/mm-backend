@@ -1,0 +1,144 @@
+{
+  "kind": "collectionType",
+  "collectionName": "routes",
+  "info": {
+    "name": "route",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "itineration": {
+      "type": "integer"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "photogallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "RouteLength": {
+      "type": "decimal",
+      "required": true
+    },
+    "route_path": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.route-path"
+    },
+    "stupanie": {
+      "type": "decimal",
+      "required": true
+    },
+    "klesanie": {
+      "type": "decimal"
+    },
+    "TotalTime": {
+      "type": "string"
+    },
+    "map": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "mountain": {
+      "model": "mountain"
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "trip": {
+      "via": "routes",
+      "model": "trip"
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "tourType": {
+      "type": "enumeration",
+      "enum": [
+        "okruh",
+        "tamSpat",
+        "prechod"
+      ],
+      "required": true
+    },
+    "dayNum": {
+      "type": "integer",
+      "default": 1
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "easy",
+        "medium",
+        "hard",
+        "ferrata",
+        "guided"
+      ],
+      "required": true
+    },
+    "mapJson": {
+      "type": "json"
+    },
+    "time": {
+      "type": "time",
+      "required": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "route"
+    },
+    "heroImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

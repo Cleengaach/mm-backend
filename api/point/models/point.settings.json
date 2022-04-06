@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "points",
+  "info": {
+    "name": "point",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "photogallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "altitude": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "north": {
+      "type": "float",
+      "required": true
+    },
+    "east": {
+      "type": "float",
+      "required": true
+    },
+    "nextPoint": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.next-point"
+    },
+    "mountain": {
+      "model": "mountain"
+    }
+  }
+}
