@@ -128,7 +128,7 @@
       "collection": "user",
       "via": "route"
     },
-    "heroImage": {
+    "HeroImage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
