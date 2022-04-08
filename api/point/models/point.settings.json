@@ -62,6 +62,18 @@
     },
     "mountain": {
       "model": "mountain"
+    },
+    "HeroImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
