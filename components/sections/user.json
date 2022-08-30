@@ -1,15 +1,24 @@
 {
   "collectionName": "components_sections_users",
   "info": {
-    "name": "Users",
-    "icon": "users",
+    "name": "User",
+    "icon": "user",
     "description": ""
   },
   "options": {},
   "attributes": {
+    "date": {
+      "type": "date"
+    },
     "users_permissions_users": {
       "plugin": "users-permissions",
       "collection": "user"
+    },
+    "time": {
+      "type": "time"
+    },
+    "itineration": {
+      "type": "integer"
     }
   }
 }

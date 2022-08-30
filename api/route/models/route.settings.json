@@ -19,12 +19,6 @@
     "description": {
       "type": "richtext"
     },
-    "date": {
-      "type": "date"
-    },
-    "itineration": {
-      "type": "integer"
-    },
     "image": {
       "model": "file",
       "via": "related",
@@ -139,10 +133,11 @@
       "collection": "region",
       "via": "route"
     },
-    "Users": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sections.users"
+    "UsersList": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.user"
+      ]
     }
   }
 }
