@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_users_lists",
+  "info": {
+    "name": "UsersList",
+    "icon": "user-friends"
+  },
+  "options": {},
+  "attributes": {
+    "routes": {
+      "collection": "route"
+    }
+  }
+}

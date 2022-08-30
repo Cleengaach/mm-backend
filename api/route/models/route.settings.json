@@ -123,11 +123,6 @@
       "type": "time",
       "required": true
     },
-    "user": {
-      "plugin": "users-permissions",
-      "collection": "user",
-      "via": "route"
-    },
     "HeroImage": {
       "model": "file",
       "via": "related",
@@ -143,6 +138,11 @@
     "regions": {
       "collection": "region",
       "via": "route"
+    },
+    "Users": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.users"
     }
   }
 }
