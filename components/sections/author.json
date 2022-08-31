@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_authors",
+  "info": {
+    "name": "Author",
+    "icon": "user-circle"
+  },
+  "options": {},
+  "attributes": {
+    "authors": {
+      "collection": "author"
+    },
+    "date": {
+      "type": "date"
+    },
+    "time": {
+      "type": "time"
+    },
+    "itineration": {
+      "type": "integer"
+    }
+  }
+}
